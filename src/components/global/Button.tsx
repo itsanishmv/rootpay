@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({
     fullWidth = false,
     className = '',
 }) => {
-    const baseStyles = 'px-6 py-3.5 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm min-h-[48px] flex items-center justify-center';
+    const baseStyles = 'cursor-pointer px-6 py-3.5 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm min-h-[48px] flex items-center justify-center';
 
     const variantStyles = {
         primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500 shadow-sm',
