@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import type { StepProps } from '../../types';
 import Button from '../../../../components/global/Button';
 
-const VerificationStep: React.FC<StepProps> = ({ onNext, onBack, userData }) => {
+const VerificationStep: React.FC<StepProps> = ({ onNext, onBack }) => {
     const [code, setCode] = useState(['', '', '', '']);
     const [error, setError] = useState('');
     const inputRefs = useRef<(HTMLInputElement | null)[]>([]);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { StepProps } from '../../types';
-import InputField from '../InputField';
-import Button from '../Button';
+import InputField from '../../../../components/global/InputField';
+import Button from '../../../../components/global/Button';
 
 const EmailStep: React.FC<StepProps> = ({ onNext, userData }) => {
     const [email, setEmail] = useState(userData.email || '');
