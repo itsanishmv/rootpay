@@ -43,10 +43,10 @@ const SuccessStep: React.FC<StepProps> = ({ userData }) => {
                         {userData.accountType || 'Personal'}
                     </p>
                 </div>
-                <div>
+                {/* <div>
                     <p className="text-xs text-gray-500 mb-1.5">Email</p>
                     <p className="text-sm font-medium text-gray-900">{userData.email}</p>
-                </div>
+                </div> */}
                 <div>
                     <p className="text-xs text-gray-500 mb-1.5">Name</p>
                     <p className="text-sm font-medium text-gray-900">

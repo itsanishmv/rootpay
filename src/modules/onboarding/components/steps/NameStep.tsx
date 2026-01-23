@@ -23,14 +23,6 @@ const NameStep: React.FC<StepProps> = ({ onNext, onBack, userData }) => {
             setError('Last name is required');
             return;
         }
-        if (!email) {
-            setError('Email is required');
-            return;
-        }
-        if (!validateEmail(email)) {
-            setError('Please enter a valid email address');
-            return;
-        }
         setError('');
         onNext({ firstName: firstName.trim(), lastName: lastName.trim(), email });
     };
@@ -61,7 +53,7 @@ const NameStep: React.FC<StepProps> = ({ onNext, onBack, userData }) => {
                         required
                     />
 
-                    <InputField
+                    {/* <InputField
                         label="Email address"
                         type="email"
                         placeholder="you@example.com"
@@ -69,7 +61,7 @@ const NameStep: React.FC<StepProps> = ({ onNext, onBack, userData }) => {
                         onChange={setEmail}
                         error={error}
                         required
-                    />
+                    /> */}
                 </div>
             </div>
 
